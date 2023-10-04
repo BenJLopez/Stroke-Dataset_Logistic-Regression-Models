@@ -14460,7 +14460,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;seaborn.axisgrid.PairGrid at 0x7fad6e29ff40&gt;</pre>
+<pre>&lt;seaborn.axisgrid.PairGrid at 0x7fa515a9f250&gt;</pre>
 </div>
 
 </div>
@@ -15056,7 +15056,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s see if that has filled in the NaN &#39;bmi&#39; values (second row had a NaN before):</span>
@@ -15076,7 +15076,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -15221,11 +15221,11 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;age&#39;</span><span class="p">,</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">,</span><span class="s1">&#39;bmi&#39;</span><span class="p">]</span> <span class="o">+</span><span class="p">[</span><span class="s1">&#39;ever_married_Yes&#39;</span><span class="p">,</span><span class="s1">&#39;gender_Male&#39;</span><span class="p">,</span><span class="s1">&#39;gender_Other&#39;</span><span class="p">]</span>
-<span class="n">target</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;median_glucose&#39;</span><span class="p">]</span>
+<span class="n">target</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;stroke&#39;</span><span class="p">]</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df_dummies</span><span class="p">[</span><span class="n">train_cols</span><span class="p">]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df_dummies</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
 
@@ -15240,7 +15240,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_leaf_nodes</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -15260,7 +15260,7 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -15278,7 +15278,7 @@ a.anchor-link {
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">y_true</span> <span class="o">=</span> <span class="n">y_test</span>
@@ -15311,7 +15311,7 @@ a.anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>accuracy 0.5518590998043053 precision 0.5417218543046357 recall 0.5453333333333333
+<pre>accuracy 0.9373776908023483 precision 0.1111111111111111 recall 0.011235955056179775
 confusion matrix
 </pre>
 </div>
@@ -15320,14 +15320,14 @@ confusion matrix
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[437, 346],
-       [341, 409]])</pre>
+<pre>array([[1436,    8],
+       [  88,    1]])</pre>
 </div>
 
 </div>
@@ -15339,7 +15339,7 @@ confusion matrix
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train_test</span><span class="p">,</span> <span class="n">X_val</span><span class="p">,</span> <span class="n">y_train_test</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.20</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -15353,7 +15353,7 @@ confusion matrix
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Just checking cross-validated runs:</span>
@@ -15384,14 +15384,14 @@ confusion matrix
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;fit_time&#39;: array([0.01515126, 0.01084399, 0.01283169, 0.01227093, 0.01089692]),
- &#39;score_time&#39;: array([0.00464177, 0.00395393, 0.00468922, 0.00349188, 0.00376797]),
- &#39;test_accuracy&#39;: array([0.53178484, 0.49633252, 0.53178484, 0.499388  , 0.52998776]),
- &#39;test_precision&#39;: array([0.53117207, 0.4962963 , 0.53333333, 0.49865952, 0.52857143]),
- &#39;test_recall&#39;: array([0.52205882, 0.49144254, 0.50855746, 0.45588235, 0.54411765])}
+<pre>{&#39;fit_time&#39;: array([0.0073719 , 0.00913   , 0.00763702, 0.00659895, 0.006845  ]),
+ &#39;score_time&#39;: array([0.00362706, 0.00531673, 0.00422096, 0.00299025, 0.00319481]),
+ &#39;test_accuracy&#39;: array([0.91075795, 0.92665037, 0.91564792, 0.90942472, 0.92656059]),
+ &#39;test_precision&#39;: array([0.07142857, 0.04166667, 0.13953488, 0.08888889, 0.20512821]),
+ &#39;test_recall&#39;: array([0.08108108, 0.02631579, 0.15789474, 0.10810811, 0.21621622])}
 
 
-mean accuracy: 0.5178555930965756 mean precision: 0.5176065290905536 mean recall: 0.5044117647058823
+mean accuracy: 0.917808309367266 mean precision: 0.10932944316665245 mean recall: 0.11792318634423897
 </pre>
 </div>
 </div>
@@ -15404,10 +15404,7 @@ mean accuracy: 0.5178555930965756 mean precision: 0.5176065290905536 mean recall
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li><p>While accuracy is much lower than my V1 model, the simple Logistic Regression Classifier (~95% accurate), this model actually has more consistent precision and recall metrics.</p>
-</li>
-<li><p>It looks like the Decision Tree Classifier is roughly 52% accurate, with similar precision and recall metrics.</p>
-</li>
+<li>It looks like the Decision Tree Classifier is roughly 91-94% accurate, with low precision and recall metrics.</li>
 </ul>
 <p>Now let's check how a Logistic Regression model will do with the newly modified features:</p>
 
@@ -15415,7 +15412,7 @@ mean accuracy: 0.5178555930965756 mean precision: 0.5176065290905536 mean recall
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Logistic Regression model:</span>
@@ -15445,14 +15442,14 @@ mean accuracy: 0.5178555930965756 mean precision: 0.5176065290905536 mean recall
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;fit_time&#39;: array([0.03034997, 0.01793098, 0.02012205, 0.02255011, 0.02483916]),
- &#39;score_time&#39;: array([0.00380683, 0.00425982, 0.00435829, 0.00357294, 0.0039711 ]),
- &#39;test_accuracy&#39;: array([0.54400978, 0.53545232, 0.55623472, 0.54222766, 0.54834761]),
- &#39;test_precision&#39;: array([0.53384913, 0.53039832, 0.54693878, 0.5371179 , 0.53907816]),
- &#39;test_recall&#39;: array([0.67647059, 0.61858191, 0.65525672, 0.60294118, 0.65931373])}
+<pre>{&#39;fit_time&#39;: array([0.02931094, 0.02477813, 0.02675509, 0.02817416, 0.02182293]),
+ &#39;score_time&#39;: array([0.00475597, 0.00384998, 0.00460219, 0.00380206, 0.00362206]),
+ &#39;test_accuracy&#39;: array([0.95476773, 0.95354523, 0.95354523, 0.95471236, 0.95471236]),
+ &#39;test_precision&#39;: array([0., 0., 0., 0., 0.]),
+ &#39;test_recall&#39;: array([0., 0., 0., 0., 0.])}
 
 
-mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall: 0.6425128242005849
+mean accuracy: 0.9542565830622498 mean precision: 0.0 mean recall: 0.0
 </pre>
 </div>
 </div>
@@ -15466,14 +15463,24 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 /Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 /Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 /Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 /Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 </pre>
 </div>
 </div>
@@ -15485,7 +15492,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>It looks like the Log Reg model is not that much better than the DTC with these features (only 54% accuracy vs the 52%...)</p>
+<p>It looks like the Log Reg model is not that much better than the DTC with these features (only 95% accuracy...)</p>
 <p>At this point I want to try to improve my model by adjusting more inputs:</p>
 <ul>
 <li>scale some of the numerical variables</li>
@@ -15497,7 +15504,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Scale numerical variables:</span>
@@ -15520,7 +15527,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
@@ -15677,7 +15684,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Adding onto the dummy variables to include all of the categorical variables:</span>
@@ -15699,7 +15706,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -16025,7 +16032,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Use Simple Imputer for the means. I needed to replace the original bmi values first.</span>
@@ -16050,7 +16057,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[19]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -16232,12 +16239,21 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Selecting the training data with all of the new scaled / modified categorical columns:</span>
-<span class="n">train_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bmi_scaled&#39;</span><span class="p">,</span><span class="s1">&#39;age_scaled&#39;</span><span class="p">,</span><span class="s1">&#39;avg_glucose_level_scaled&#39;</span><span class="p">,</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">]</span> <span class="o">+</span><span class="p">[</span><span class="s1">&#39;ever_married_Yes&#39;</span><span class="p">,</span><span class="s1">&#39;gender_Male&#39;</span><span class="p">,</span><span class="s1">&#39;gender_Other&#39;</span><span class="p">,</span><span class="s1">&#39;work_type_Never_worked&#39;</span><span class="p">,</span><span class="s1">&#39;work_type_Private&#39;</span><span class="p">,</span><span class="s1">&#39;work_type_Self-employed&#39;</span><span class="p">,</span><span class="s1">&#39;work_type_children&#39;</span><span class="p">,</span><span class="s1">&#39;Residence_type_Urban&#39;</span><span class="p">,</span><span class="s1">&#39;smoking_status_formerly smoked&#39;</span><span class="p">,</span><span class="s1">&#39;smoking_status_never smoked&#39;</span><span class="p">,</span><span class="s1">&#39;smoking_status_smokes&#39;</span><span class="p">]</span>
-<span class="n">target</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;median_glucose&#39;</span><span class="p">]</span>
+<span class="n">smoking</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;smoking_status_formerly smoked&#39;</span><span class="p">,</span><span class="s1">&#39;smoking_status_never smoked&#39;</span><span class="p">,</span><span class="s1">&#39;smoking_status_smokes&#39;</span><span class="p">]</span>
+<span class="n">existing_conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hypertension&#39;</span><span class="p">,</span><span class="s1">&#39;heart_disease&#39;</span><span class="p">]</span>
+<span class="n">health_metrics</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;bmi_scaled&#39;</span><span class="p">,</span><span class="s1">&#39;age_scaled&#39;</span><span class="p">,</span><span class="s1">&#39;avg_glucose_level_scaled&#39;</span><span class="p">]</span>
+<span class="n">other_factors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;ever_married_Yes&#39;</span><span class="p">,</span><span class="s1">&#39;gender_Male&#39;</span><span class="p">,</span><span class="s1">&#39;gender_Other&#39;</span><span class="p">,</span><span class="s1">&#39;work_type_Never_worked&#39;</span><span class="p">,</span><span class="s1">&#39;work_type_Private&#39;</span><span class="p">,</span><span class="s1">&#39;work_type_Self-employed&#39;</span><span class="p">,</span><span class="s1">&#39;work_type_children&#39;</span><span class="p">,</span><span class="s1">&#39;Residence_type_Urban&#39;</span><span class="p">]</span>
+
+<span class="n">train_cols</span> <span class="o">=</span> <span class="n">smoking</span><span class="o">+</span><span class="n">existing_conditions</span><span class="o">+</span><span class="n">health_metrics</span><span class="o">+</span><span class="n">other_factors</span>
+<span class="c1">#train_cols = smoking+existing_conditions</span>
+
+<span class="n">target</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;stroke&#39;</span><span class="p">]</span>
+<span class="c1">#target = [&#39;median_glucose&#39;]</span>
+
 <span class="n">X</span> <span class="o">=</span> <span class="n">df_dummies2</span><span class="p">[</span><span class="n">train_cols</span><span class="p">]</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df_dummies2</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
 
@@ -16252,7 +16268,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train_test</span><span class="p">,</span> <span class="n">X_val</span><span class="p">,</span> <span class="n">y_train_test</span><span class="p">,</span> <span class="n">y_val</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.20</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
@@ -16266,7 +16282,7 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">penalty</span><span class="o">=</span><span class="s1">&#39;l2&#39;</span><span class="p">,</span><span class="n">C</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -16295,14 +16311,14 @@ mean accuracy: 0.5452544193827379 mean precision: 0.5374764576395847 mean recall
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>{&#39;fit_time&#39;: array([0.01902723, 0.016958  , 0.01618886, 0.0134511 , 0.01640391]),
- &#39;score_time&#39;: array([0.00529099, 0.00430298, 0.0036428 , 0.0046978 , 0.00370526]),
- &#39;test_accuracy&#39;: array([0.99388753, 0.99511002, 0.99266504, 0.99265606, 0.99143207]),
- &#39;test_precision&#39;: array([0.98789346, 0.99511002, 0.98789346, 0.99507389, 0.98313253]),
- &#39;test_recall&#39;: array([1.        , 0.99511002, 0.99755501, 0.99019608, 1.        ])}
+<pre>{&#39;fit_time&#39;: array([0.01805091, 0.01376414, 0.01320291, 0.01181102, 0.01308489]),
+ &#39;score_time&#39;: array([0.00365996, 0.00358105, 0.00370002, 0.00375605, 0.00355506]),
+ &#39;test_accuracy&#39;: array([0.95476773, 0.95354523, 0.95354523, 0.95471236, 0.95471236]),
+ &#39;test_precision&#39;: array([0.5, 0. , 0. , 0. , 0. ]),
+ &#39;test_recall&#39;: array([0.02702703, 0.        , 0.        , 0.        , 0.        ])}
 
 
-mean accuracy: 0.9931501437964046 mean precision: 0.9898206742270885 mean recall: 0.9965722230212378
+mean accuracy: 0.9542565830622498 mean precision: 0.1 mean recall: 0.005405405405405406
 </pre>
 </div>
 </div>
@@ -16318,12 +16334,20 @@ mean accuracy: 0.9931501437964046 mean precision: 0.9898206742270885 mean recall
   return f(*args, **kwargs)
 /Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 /Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 /Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 /Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
   return f(*args, **kwargs)
+/Users/ben/opt/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1245: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 due to no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
 </pre>
 </div>
 </div>
@@ -16335,23 +16359,9 @@ mean accuracy: 0.9931501437964046 mean precision: 0.9898206742270885 mean recall
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>This is a much better model! Looks like 99.3% accuracy, with precision and recall both roughly 99% as well!</p>
+<p>This is a much better model! Looks like 95% accuracy, however precison and recall could still use work..</p>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 </body>
 
